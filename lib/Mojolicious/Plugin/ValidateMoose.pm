@@ -42,7 +42,7 @@ using L<Moose> classes.
 
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '0.01';
+our $VERSION = eval '0.01';
 
 =head1 HELPERS
 

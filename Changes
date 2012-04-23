@@ -1,5 +1,5 @@
 Revision history for Mojolicious-Plugin-ValidateMoose
 
-0.01
+0.01     Mon Apr 23 21:50:21 2012
+       * Add validate_moose() helper
        * Started project
-       * Add cool feature
