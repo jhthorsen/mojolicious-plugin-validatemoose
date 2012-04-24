@@ -2,7 +2,7 @@ NAME
     Mojolicious::Plugin::ValidateMoose - Can validate using Moose objects
 
 VERSION
-    0.01
+    0.02
 
 DESCRIPTION
     This module is handy if you want to validate POST/GET parameters using

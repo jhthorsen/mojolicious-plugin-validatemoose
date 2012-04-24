@@ -6,7 +6,7 @@ Mojolicious::Plugin::ValidateMoose - Can validate using Moose objects
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 DESCRIPTION
 
@@ -42,7 +42,7 @@ using L<Moose> classes.
 
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = eval '0.01';
+our $VERSION = eval '0.02';
 
 =head1 HELPERS
 

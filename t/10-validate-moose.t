@@ -4,7 +4,7 @@ use lib qw(lib);
 use Test::More;
 use Mojolicious::Plugin::ValidateMoose;
 
-plan tests => 14;
+plan tests => 15;
 
 {
     my $plugin = Mojolicious::Plugin::ValidateMoose->new;
@@ -33,10 +33,8 @@ plan tests => 14;
     $app->{'num'} = 'bar';
     $app->{'int'} = 'foo';
     $validator->($app, 'TestClass');
-    is_deeply($app->{'invalid_form_elements'}, {
-        int => q(Validation failed for 'Int' with value foo),
-        num => q(Validation failed for 'Num' with value bar),
-    }, 'int and num has invalid value');
+    like($app->{'invalid_form_elements'}{'int'}, qr{Validation failed for.*Int.*foo}, 'int has invalid value');
+    like($app->{'invalid_form_elements'}{'num'}, qr{Validation failed for.*Num.*bar}, 'num has invalid value');
 
     $app->{'num'} = 2.54;
     $app->{'int'} = 123;
