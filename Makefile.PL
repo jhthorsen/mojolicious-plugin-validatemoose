@@ -8,7 +8,7 @@ requires q(Moose) => 2.00;
 
 bugtracker q(http://rt.cpan.org/NoAuth/Bugs.html?Dist=Mojolicious-Plugin-ValidateMoose);
 homepage q(https://metacpan.org/release/Mojolicious-Plugin-ValidateMoose);
-repository q(git://github.com/mojolicious-plugin-validatemoose);
+repository q(git://github.com/jhthorsen/mojolicious-plugin-validatemoose/);
 
 auto_install;
 WriteAll;
